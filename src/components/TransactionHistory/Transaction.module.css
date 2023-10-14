@@ -1,0 +1,39 @@
+.transactionHistory {
+  /* border-collapse: collapse; */
+  border: none;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.transactionHistory th {
+  background-color: rgb(0, 162, 220);
+  border: 1px solid #ccc;
+
+  text-transform: uppercase;
+  padding: 10px;
+
+  width: 150px;
+}
+
+.transactionHistory td {
+  border: 1px solid #ccc;
+  padding: 5px;
+
+  text-align: center;
+}
+
+/* Выберите первую колонку таблицы и примените стили к первой букве каждой ячейки */
+.transactionHistory tr td:first-child::first-letter {
+  text-transform: uppercase;
+}
+
+/* Установите белый фон для четных строк (нулевой индекс, второй индекс, четвёртый индекс и так далее) */
+.transactionHistory tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+/* Установите серый фон для нечетных строк (первый индекс, третий индекс, пятый индекс и так далее) */
+.transactionHistory tr:nth-child(even) {
+  background-color: #ccc;
+}
